@@ -1,81 +1,77 @@
-# OctoAcme Personas
+# OctoAcme — Roles and Personas (expanded)
 
-This document defines typical roles and responsibilities used in OctoAcme project docs and exercises.
+This document defines project roles and personas used across OctoAcme projects. The purpose of this update is to add clarity and accountability by introducing additional roles, detailing responsibilities, and describing interactions with existing roles.
 
----
+## Core roles (summary)
+- Project Manager (PM): Owns project delivery, schedule, budget, and stakeholder communication.
+- Engineering Lead: Technical direction and code quality.
+- Product Manager: Product vision and priority decisions.
 
-## Developers
+## New/expanded personas
 
-### Role Summary
-Developers design, build, test, and deliver software components. They collaborate with product and project leads to implement features that meet acceptance criteria and quality standards.
+### Product Owner
+Responsibilities:
+- Own and communicate product vision and goals for the project.
+- Maintain and prioritize the product backlog.
+- Accept or reject delivered features based on acceptance criteria.
+How they interact:
+- Works with PM to align roadmap and release planning.
+- Collaborates with Engineering Lead and Scrum Master on scope and sprint goals.
+- Coordinates with Technical Writer to ensure release notes and user-facing docs reflect scope.
 
-### Responsibilities
-- Implement features and fixes to meet acceptance criteria
-- Write and maintain tests and documentation
-- Participate in design and code reviews
-- Assist in estimating and planning work
-- Help identify technical risks and propose mitigations
+### Scrum Master
+Responsibilities:
+- Facilitate agile ceremonies (planning, standups, reviews, retrospectives).
+- Remove impediments and protect the team from external distractions.
+- Coach the team on agile practices and continuous improvement.
+How they interact:
+- Works closely with PM and Product Owner to maintain flow and realistic commitments.
+- Escalates blockers to PM when cross-team coordination or organizational decisions are required.
 
-### Goals
-- Deliver reliable, maintainable code
-- Reduce cycle time from idea to production
-- Maintain high test coverage and observability
+### QA Lead
+Responsibilities:
+- Define and manage QA strategy, test plans, and acceptance criteria.
+- Coordinate test execution across environments and ensure test coverage.
+- Sign-off on releases from a quality perspective.
+How they interact:
+- Receives feature readiness notifications from Engineering Lead and Product Owner.
+- Reports test status, defects and release readiness to PM and Product Owner.
+- Works with Technical Writer to ensure testing instructions and release notes are accurate.
 
-### Typical Communication
-- Daily standups and sprint planning
-- PR descriptions and code review comments
-- Technical design docs when needed
+### Technical Writer
+Responsibilities:
+- Produce and maintain process documentation, runbooks, and release notes.
+- Ensure documentation is clear, versioned, and accessible to stakeholders.
+How they interact:
+- Gathers inputs from Product Owner, Engineering Lead, QA Lead and PM.
+- Publishes release notes and updates process docs prior to deployments.
 
----
+### Data Analyst
+Responsibilities:
+- Define and track project KPIs; provide analysis to support decisions.
+- Instrument product and process metrics; validate measurement accuracy.
+How they interact:
+- Works with PM and Product Owner to define success metrics for features/releases.
+- Reports insights that drive prioritization and retrospective action items.
 
-## Product Managers
+### Release Coordinator (optional persona for larger releases)
+Responsibilities:
+- Manage release windows, cutover plans and rollback procedures.
+- Coordinate stakeholders during release execution.
+How they interact:
+- Works with PM, Engineering Lead, QA Lead and Technical Writer to execute release checklist and sign-offs.
+- Ensures communication to stakeholders and users during release.
 
-### Role Summary
-Product Managers define what should be built to deliver customer and business value. They own the product vision, prioritize the backlog, and measure outcomes.
+## Example interactions and RACI-style notes
+- Feature prioritization: Product Owner (A), Product Manager (C), PM (C), Engineering Lead (R)
+- Release sign-off: QA Lead (A), Release Coordinator (R), PM (C), Technical Writer (C)
+- Documentation updates: Technical Writer (R), Product Owner (C), Engineering Lead (C)
 
-### Responsibilities
-- Define problem statements and success metrics
-- Prioritize the roadmap and backlog
-- Collaborate with stakeholders and engineering on trade-offs
-- Validate solutions through user research and metrics
+## Why this matters
+- Clear accountability reduces handoff ambiguity and missed responsibilities.
+- Explicit interactions improve cross-team communication and speed up decision-making.
+- Role-based checklists and sign-offs lower release risk and increase predictability.
 
-### Goals
-- Maximize customer value and impact
-- Make clear, data-driven prioritization decisions
-- Ensure product-market fit and usability
-
-### Typical Communication
-- Weekly alignment with PM and engineering leads
-- Roadmap updates and stakeholder briefings
-- Acceptance criteria and feature specs
-
----
-
-## Project Managers
-
-### Role Summary
-Project Managers coordinate delivery activities, manage schedules, risks, and communications. They enable the team to deliver on commitments efficiently.
-
-### Responsibilities
-- Create and maintain project plans and timelines
-- Manage risks, dependencies, and resource constraints
-- Facilitate meetings (kickoff, planning, retrospectives)
-- Ensure consistent project documentation and status reporting
-- Coordinate cross-team and stakeholder communication
-
-### Goals
-- Deliver projects on time and within scope
-- Minimize unplanned work and escalations
-- Maintain transparency and alignment across stakeholders
-
-### Typical Communication
-- Weekly status updates and stakeholder reports
-- Risk registers and decision logs
-- Coordination via project boards and meeting facilitation
-
----
-
-## How these personas are used in the exercise
-- Use these persona definitions to frame scenarios and sample interactions in the Skills Exercise.
-- Each persona can be used as a persona prompt for Copilot Spaces to shape role-specific guidance.
-
+## Next steps
+- Add short checklists and stage-gate templates to docs/templates/ for operationalization.
+- Review these roles with stakeholders and incorporate feedback.
